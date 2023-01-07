@@ -1,0 +1,113 @@
+# set file icons
+set icons
+
+# show line number
+# absolute number on selected
+set number
+# relativenumber on other
+set relativenumber
+
+# set previewer to bat
+set previewer "~\\Appdata\\Local\\lf\\preview.cmd"
+
+# use 'D' (shift + d) to move files to recycle bin
+cmd trash $powershell %LOCALAPPDATA%\lf\lf-trash.ps1 %fx%
+map D trash
+# use '<delete>' to delete files
+map <delete> delete
+
+# use '<enter>' or 'l' to open
+map <enter> open
+
+# Wrap Scroll
+set wrapscroll true
+
+set filesep " "
+
+# change the shell used in default shell keybinding
+map w $powershell
+
+# change the editor used in default editor keybinding
+map e open-with-helix 
+
+# change the pager used in default pager keybinding
+map i preview-with-bat # default PAGER to bat
+
+# make directory (do nothing if the dir exists)
+# cmd md $powershell %LOCALAPPDATA%\lf\lf-md.ps1
+cmd md $%LOCALAPPDATA%\lf\lf-md.cmd
+map \\ md
+
+# create new file (do nothing if the file exists)
+# cmd ni $powershell %LOCALAPPDATA%\lf\lf-ni.ps1
+cmd ni $%LOCALAPPDATA%\lf\lf-ni.cmd
+map . ni
+
+# copy file path
+cmd copy-path &echo|set /p=%f%|clip
+map C copy-path
+
+# extract with 7z
+# extract to a new folder with the archive name
+cmd extract-to-folder !7z x %f% -o*
+map xt extract-to-folder
+
+# extract here
+cmd extract-here !7z x %f%
+map xh extract-here
+
+# compress with 7z (only works with folder)
+# to .zip
+cmd compress-to-zip !7z a %f% %f% -tzip -saa
+map az compress-to-zip
+
+# to .7z
+cmd compress-to-7z !7z a %f% %f% -t7z -saa
+map a7 compress-to-7z
+
+# change directory with fzf
+cmd fzf-jump $%LOCALAPPDATA%\lf\lf-jump.cmd %id%
+map of fzf-jump
+
+# Dragon-win
+cmd open-in-dragon &dragonwindows %fx%
+cmd open-in-dragon-exit &dragonwindows -x %fx%
+map od open-in-dragon
+map ox open-in-dragon-exit
+
+# Open with nvim (plain text files only)
+cmd open-with-nvim $nvim %f%
+map on open-with-nvim
+cmd open-with-nvim-qt &nvim-qt %f%
+map oN open-with-nvim-qt
+
+# Open with micro (plain text files only)
+cmd open-with-micro $micro %f%
+map om open-with-micro
+
+# Open with helix (plain text files only)
+cmd open-with-helix $hx %f%
+map oh open-with-helix
+
+# Open with sioyek (PDF only)
+cmd open-with-sioyek &sioyek %f%
+map os open-with-sioyek
+
+# Open in explorer
+cmd open-in-explorer &explorer %PWD%
+map oe open-in-explorer
+
+# Preview with bat
+cmd preview-with-bat $bat %f% --theme=gruvbox-dark --paging=always
+map ob preview-with-bat
+
+# Preview with wezterm imgcat
+cmd preview-with-imgcat !wezterm imgcat %f%
+map oi preview-with-imgcat
+
+# Compares 2 files
+cmd compare-files !difft %fx% --display=side-by-side-show-both
+map oc compare-files
+
+# Source Bookmarks
+source "~\AppData\Local\lf\shortcuts"

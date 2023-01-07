@@ -1,0 +1,29 @@
+# 
+# Rime dictionary
+# zephyr
+# encoding: utf-8
+#
+# Author: Zephyr
+#
+# 词库来源
+#   四叶草简体拼音 https://github.com/fkxxyz/rime-cloverpinyin
+#   Rime-Better库 https://github.com/Chernfalin/better-rime-dict
+#   百度、搜狗词库的化学相关
+#
+
+---
+name: zephyr
+version: "1.0.0"
+sort: by_weight
+use_preset_vocabulary: true
+
+import_tables:
+  - luna_pinyin
+  - clover.phrase
+  - chemistry
+  - chem_elements
+  - sogou_new_words
+  - THUOCL_medical
+  - THUOCL_animal
+  - luna_pinyin.poetry
+...

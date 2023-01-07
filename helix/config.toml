@@ -1,0 +1,27 @@
+theme = "gruvbox"
+
+[editor]
+line-number = "relative"
+cursorline = true
+bufferline = "always"
+
+[editor.statusline]
+left = ["mode", "file-name", "file-type", "spinner"]
+right = ["diagnostics", "file-encoding", "selections", "position"]
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = ">"
+tabpad = "-"
+
+[editor.indent-guides]
+render = true

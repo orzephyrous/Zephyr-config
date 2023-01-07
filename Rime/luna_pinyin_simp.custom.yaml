@@ -1,0 +1,128 @@
+
+#
+# luna_pinyin_simp.custom.yaml
+# encoding: utf-8
+#
+# Modification author: Zephyr
+#
+# 明月拼音·简化字定制方案
+# 参考四叶草简体拼音
+#
+# 相关文件位置
+#   %APPDATA%\Rime
+#
+
+patch:
+  "menu/page_size": 9  # 候选数
+  "translator/dictionary": zephyr  # 词库扩充
+  # 增加符号支持
+  "engine/filters": 
+    - simplifier
+    - "simplifier@symbol_support"
+    - uniquifier
+  symbol_support:
+    opencc_config: symbol.json
+    option_name: symbol_support
+    tips: all
+  # 开关
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: ["中文", "西文"]
+    - name: zh_simp
+      reset: 1
+      states: ["漢字", "汉字"]
+    - name: ascii_punct
+      reset: 0
+      states: ["。，", ". , "]
+    - name: full_shape
+      reset: 0
+      states: ["半角", "全角"]
+    - name: symbol_support
+      reset: 1
+      states: ["无符", "有符"]
+  # 标点
+  'recognizer/patterns/punct': "^v([0-9]|10|[A-Za-z]+)$"  #识别zephyr_symbol中的v字符
+  # 半角输入直接上屏中文标点，全角输入显示多个unicode字符选项
+  punctuator:
+    import_preset: zephyr_symbol
+    full_shape:
+      " ": { commit: '　' }
+      ",": { commit: ， }
+      ".": { commit: 。 }
+      "<": [ 《, 〈, «, ‹ ]
+      ">": [ 》, 〉, », › ]
+      "/": ["÷", "／"]
+      "?": { commit: ？ }
+      ";": { commit: ； }
+      ":": { commit: ： }
+      "'": { pair: [ '‘', '’' ] }
+      "\"": { pair: [ '“', '”' ] }
+      "\\": [ 、, ＼ ]
+      "|": ["｜", "§", "¦", "·"]
+      "`": ｀
+      "~": ～
+      "!": { commit: ！ }
+      "@": [ ＠, ☯ ]
+      "#": [ ＃, ⌘ ]
+      "%": ["%", "％", "°", "℃"]
+      "$": [ ￥, '$', '€', '£', '¥', '¢', '¤', ₩ ]
+      "^": { commit: …… }
+      "&": ＆
+      "*": ["×", "＊", "·", "・", "※", "❂"]
+      "(" : （
+      ")" : ）
+      "-" : －
+      "_" : ——
+      "+" : ＋
+      "=" : [ ＝, 々, 〃 ]
+      "[" : [ 「, 【, 〔, ［ ]
+      "]" : [ 」, 】, 〕, ］ ]
+      "{" : [ 『, 〖, ｛ ]
+      "}" : [ 』, 〗, ｝ ]
+    half_shape:
+      "`": "·"
+      "~": "～"
+      "!": "！"
+      "@": "@"
+      "#": "#"
+      "$": "$"
+      "%": "%"
+      "^": "……"
+      "&": "&"
+      "*": "×"
+      "(": "（"
+      ")": "）"
+      "_": "——"
+      "+": "+"
+      "-": "-"
+      "=": "="
+      "[": "【"
+      "]": "】"
+      "{": "｛"
+      "}": "｝"
+      "|": "｜"
+      "\\": "、"
+      "/": "、"
+      ";": "；"
+      "'": { pair: [ "‘", "’" ] }
+      "\"": { pair: [ "“", "”" ] }
+      ",": "，"
+      ".": "。"
+      ":": "："
+      "<": "《"
+      ">": "》"
+      "?": "？"
+  # 切换行为
+  # 中文输入下按Shift直接将英文字母上屏
+  ascii_composer:
+    import_preset: default
+    good_old_caps_lock: true
+    switch_key:
+      Shift_L: commit_code   # 左 Shift 切换直接上屏字母
+      Shift_R: commit_code   # 右 Shift 切换直接上屏字母
+      Control_L: noop
+      Control_R: noop
+      Caps_Lock: noop
+      Eisu_toggle: clear
+
