@@ -1,0 +1,5 @@
+require('config.gruvbox')
+require('config.lualine')
+require('config.nvim-tree')
+require('config.nvim-treesitter')
+require('config.comment')

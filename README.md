@@ -10,6 +10,7 @@ Made this for better data migration to my new laptop.
 - lf: `%LOCALAPPDATA%\lf`
 - micro: `~\.config\micro`
 - mpv.net: `%APPDATA%\mpv.net`
+- NeoVim: `%LOCALAPPDATA%\nvim`
 - Rime: `%APPDATA%\Rime`
 - wezterm: `~\.config\wezterm`
 
@@ -47,6 +48,10 @@ Main content of each folder.
 ### mpv.net
 
 See `mpv.net\mpvnet-config.md`
+
+### Neovim
+
+See `nvim\nvim-config.md`
 
 ### Rime
 
