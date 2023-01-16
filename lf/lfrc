@@ -11,7 +11,7 @@ set relativenumber
 set previewer "~\\Appdata\\Local\\lf\\preview.cmd"
 
 # use 'D' (shift + d) to move files to recycle bin
-cmd trash $powershell %LOCALAPPDATA%\lf\lf-trash.ps1 %fx%
+cmd trash $pwsh %LOCALAPPDATA%\lf\lf-trash.ps1 %fx%
 map D trash
 # use '<delete>' to delete files
 map <delete> delete
