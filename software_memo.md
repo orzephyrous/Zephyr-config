@@ -77,6 +77,7 @@
 - [Adobe Flash Player](https://www.flash.cn)
 - [Amazon Kindle](https://read.amazon.com/landing)
 - [CAJViewer](https://cajviewer.cnki.net)
+- [Flicker List](https://flicker.cool) `4.1.0`
 - [Foobar2000](https://www.foobar2000.org)
 - [Fraps](https://fraps.com)
 - [Geek uninstaller](https://geekuninstaller.com)
@@ -87,6 +88,7 @@
 - [MarkdownPad2](http://markdownpad.com)
 - [Mousotron](https://www.blacksunsoftware.com/mousotron.html)
 - [Mozilla Firefox](https://www.firefox.com.cn)
+- [Notezilla](https://www.conceptworld.com/Notezilla/) `9.0.28`
 - [Obsidian](https://obsidian.md)
 - [PDFsam Basic](https://pdfsam.org/download-pdfsam-basic/)
 - [Picasa](https://picasaapp.com)
