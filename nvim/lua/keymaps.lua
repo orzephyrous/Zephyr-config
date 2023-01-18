@@ -11,7 +11,12 @@ wk.register({
     o = { "<cmd>BufferCloseAllButCurrent<cr>", "Buffer Close Others"},
     f = { "<cmd>BufferPick<cr>", "Buffer Pick"},
   },
-  t = { "<cmd>NvimTreeToggle<cr>", "Toggle Nvim-Tree" },
+  t = { 
+    name = "tree",
+    t = { "<cmd>NvimTreeToggle<cr>", "Toggle Nvim-Tree" },
+    o = { "<cmd>NvimTreeOpen<cr>", "Open Nvim-Tree" },
+    q = { "<cmd>NvimTreeClose<cr>", "Close Nvim-Tree" },
+  },
   p = {
     name = "paste",
     p = { '"+p', "Paste System Clipboard" },
