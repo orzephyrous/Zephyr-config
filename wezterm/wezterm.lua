@@ -33,6 +33,10 @@ return {
     {
       label = 'Nushell',
       args = { 'nu.exe' }
+    },
+    {
+      label = 'Anaconda Prompt',
+      args = { 'cmd.exe', '/K', [[C:\ProgramData\Anaconda3\Scripts\activate.bat C:\ProgramData\Anaconda3]] }
     }
   },
   font = wezterm.font_with_fallback {
