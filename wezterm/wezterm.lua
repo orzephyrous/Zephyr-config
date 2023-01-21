@@ -36,7 +36,7 @@ return {
     },
     {
       label = 'Anaconda Prompt',
-      args = { 'cmd.exe', '/K', [[C:\ProgramData\Anaconda3\Scripts\activate.bat C:\ProgramData\Anaconda3]] }
+      args = { 'cmd.exe', '/K', [[%USERPROFILE%\anaconda3\Scripts\activate.bat %USERPROFILE%\anaconda3]] }
     }
   },
   font = wezterm.font_with_fallback {
