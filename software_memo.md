@@ -18,6 +18,7 @@
 - [Difftastic](https://difftastic.wilfred.me.uk)
 - [Ditto](https://ditto-cp.sourceforge.io)
 - [DragonWin](https://github.com/SleepyBag/dragon-win)
+- [Dopamine](https://digimezzo.github.io/site/)
 - [fd](https://github.com/sharkdp/fd)
 - [ffmpeg](https://ffmpeg.org)
 - [File Converter](https://github.com/Tichau/FileConverter)
@@ -77,6 +78,7 @@
 - [Adobe Flash Player](https://www.flash.cn)
 - [Amazon Kindle](https://read.amazon.com/landing)
 - [CAJViewer](https://cajviewer.cnki.net)
+- [ccleaner](www.ccleaner.com/ccleaner)
 - [Flicker List](https://flicker.cool) `4.1.0`
 - [Foobar2000](https://www.foobar2000.org)
 - [Fraps](https://fraps.com)
