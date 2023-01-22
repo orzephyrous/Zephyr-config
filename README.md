@@ -2,14 +2,14 @@
 
 Zephyr's configuration files for my Windows PC.
 
-Made this for better data migration to my new laptop.
+Config diectories are linked to this repository using `New-Item -ItemType Junction -Path ... -Value ...` in powershell.
 
 ## Config directories:
 
 - helix: `%APPDATA%\helix`
 - lf: `%LOCALAPPDATA%\lf`
 - micro: `~\.config\micro`
-- mpv.net: `%APPDATA%\mpv.net`
+- mpv.net: `%APPDATA%\mpv.net` (scoop: `~\scoop\persist\mpv.net-beta\portable_config`)
 - NeoVim: `%LOCALAPPDATA%\nvim`
 - Rime: `%APPDATA%\Rime`
 - wezterm: `~\.config\wezterm`
