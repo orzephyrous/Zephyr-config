@@ -7,6 +7,8 @@ set number
 # relativenumber on other
 set relativenumber
 
+set scrolloff 3
+
 # set previewer to bat
 set previewer "~\\Appdata\\Local\\lf\\preview.cmd"
 
@@ -34,12 +36,10 @@ map e open-with-helix
 map i preview-with-bat # default PAGER to bat
 
 # make directory (do nothing if the dir exists)
-# cmd md $powershell %LOCALAPPDATA%\lf\lf-md.ps1
 cmd md $%LOCALAPPDATA%\lf\lf-md.cmd
 map \\ md
 
 # create new file (do nothing if the file exists)
-# cmd ni $powershell %LOCALAPPDATA%\lf\lf-ni.ps1
 cmd ni $%LOCALAPPDATA%\lf\lf-ni.cmd
 map . ni
 
@@ -64,6 +64,10 @@ map az compress-to-zip
 # to .7z
 cmd compress-to-7z !7z a %f% %f% -t7z -saa
 map a7 compress-to-7z
+
+# compress files
+cmd add-files-to-zip !pwsh %LOCALAPPDATA%\lf\lf-compress.ps1 %fx%
+map af add-files-to-zip
 
 # change directory with fzf
 cmd fzf-jump $%LOCALAPPDATA%\lf\lf-jump.cmd %id%
