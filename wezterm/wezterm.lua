@@ -19,7 +19,7 @@ return {
       args = { 'powershell.exe' }
     },
     {
-      label = 'Powershell 7.3.1',
+      label = 'Powershell 7',
       args = { 'pwsh.exe' }
     },
     {
