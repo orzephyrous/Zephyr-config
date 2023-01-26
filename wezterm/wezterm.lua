@@ -23,6 +23,10 @@ return {
       args = { 'pwsh.exe' }
     },
     {
+      label = 'Nushell',
+      args = { 'nu.exe' }
+    },
+    {
       label = 'Git Bash',
       args = { 'C:\\Program Files\\Git\\bin\\bash.exe' }
     },
@@ -31,12 +35,12 @@ return {
       args = { 'C:\\Program Files\\Git\\git-cmd.exe' }
     },
     {
-      label = 'Nushell',
-      args = { 'nu.exe' }
-    },
-    {
       label = 'Anaconda Prompt',
       args = { 'cmd.exe', '/K', [[%USERPROFILE%\anaconda3\Scripts\activate.bat %USERPROFILE%\anaconda3]] }
+    },
+    {
+      label = 'Julia',
+      args = { 'julia.exe' }
     }
   },
   font = wezterm.font_with_fallback {
