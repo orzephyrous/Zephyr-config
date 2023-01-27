@@ -8,7 +8,7 @@ end)
 
 return {
   -- Spawn powershell
-  default_prog = { 'powershell.exe', '-NoLogo' },
+  default_prog = { 'pwsh.exe' },
   launch_menu = {
     {
       label = 'cmd',

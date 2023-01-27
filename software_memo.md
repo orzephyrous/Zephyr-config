@@ -48,6 +48,7 @@
 - [Notepad3](https://www.rizonesoft.com/downloads/notepad3/)
 - [Nushell](https://www.nushell.sh)
 - [OBS Studio](https://obsproject.com)
+- [oh-my-posh](https://ohmyposh.dev)
 - [PowerShell 7](https://learn.microsoft.com/zh-cn/powershell/)
 - [PowerToys](https://github.com/microsoft/PowerToys)
 - [qimgv](https://github.com/easymodo/qimgv)
