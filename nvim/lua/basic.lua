@@ -11,3 +11,5 @@ vim.opt.autoindent = true
 vim.opt.cursorline = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true

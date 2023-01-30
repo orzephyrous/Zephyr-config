@@ -5,7 +5,7 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- Color theme: gruvbox
-  use { 'ellisonleao/gruvbox.nvim' }
+  use 'ellisonleao/gruvbox.nvim'
 
   use 'nvim-tree/nvim-web-devicons'
 
