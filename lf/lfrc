@@ -27,7 +27,7 @@ set wrapscroll true
 set filesep " "
 
 # change the shell used in default shell keybinding
-map w $powershell
+map w $pwsh
 
 # change the editor used in default editor keybinding
 map e open-with-helix 
@@ -58,15 +58,15 @@ map xh extract-here
 
 # compress with 7z (only works with folder)
 # to .zip
-cmd compress-to-zip !7z a %f% %f% -tzip -saa
-map az compress-to-zip
+cmd compress-folder-to-zip !7z a %f% %f% -tzip -saa
+map az compress-folder-to-zip
 
 # to .7z
-cmd compress-to-7z !7z a %f% %f% -t7z -saa
-map a7 compress-to-7z
+cmd compress-folder-to-7z !7z a %f% %f% -t7z -saa
+map a7 compress-folder-to-7z
 
 # compress files
-cmd add-files-to-zip !pwsh %LOCALAPPDATA%\lf\lf-compress.ps1 %fx%
+cmd add-files-to-zip !pwsh %LOCALAPPDATA%\lf\lf-compress.ps1 %id% %fx%
 map af add-files-to-zip
 
 # change directory with fzf
