@@ -8,12 +8,15 @@
 | | |-init.lua
 | | |-comment.lua
 | | |-gruvbox.lua
+| | |-iron.lua
 | | |-lualine.lua
+| | |-nvim-surround.lua
 | | |-nvim-tree.lua
 | | └-nvim-treesitter.lua
 | |-basic.lua
 | |-keymaps.lua
 | └-plugins.lua
+|-ginit.vim
 └-init.lua
 ```
 
@@ -33,6 +36,9 @@
 - packer.nvim
 - telescope.nvim
 - which-key.nvim
+- iron.nvim
+- nvim-surround
+- leap.nvim
 
 ## content
 
@@ -47,6 +53,8 @@
 - Highlighting: nvim-treesitter
 - Key bindings: which-key.nvim
 - Markdown support: markdown-preview.nvim, clipboard-image.nvim
+- Quick motion: leap.nvim
 - Comment: comment.nvim
+- Surround: nvim-surround
+- REPL support: iron.nvim
 - Basic settings: relative line number, listchars, cursorline
-
