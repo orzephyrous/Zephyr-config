@@ -13,3 +13,4 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
+vim.opt.timeoutlen = 500

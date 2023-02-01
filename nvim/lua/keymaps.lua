@@ -1,6 +1,7 @@
 vim.g.mapleader = ' '
 
 local wk = require("which-key")
+local iron = require("iron.core")
 
 wk.register({
   b = {
@@ -33,5 +34,26 @@ wk.register({
     b = { "<cmd>Telescope buffers<cr>", "Find buffers" },
     h = { "<cmd>Telescope help_tags<cr>", "Help tags" },
   },
+  r = {
+    name = "repl",
+    o = { "<cmd>IronRepl<cr>", "REPL open" },
+    r = { "<cmd>IronRestart<cr>", "REPL restart" },
+    h = { "<cmd>IronHide<cr>", "REPL hide" },
+    q = { function() iron.close_repl() end, "REPL close" },
+    f = { "<cmd>IronFocus<cr>", "REPL focus" },
+  },
+  s = {
+    name = "send",
+    l = { function() iron.send_line() end, "Send line" },
+    f = { function() iron.send_file() end, "Send file" },
+    c = { function() iron.run_motion("send_motion") end, "Send motion" },
+    ["<cr>"] = { function() iron.send(nil, string.char(13)) end, "Send <cr>" },
+    ["<space>"] = {function() iron.send(nil, string.char(03)) end, "Interrupt REPL" },
+    q = { function() iron.close_repl() end, "Send exit" },
+  },
 }, { prefix = "<leader>" })
+
+wk.register({
+  s = { function() iron.visual_send() end, "Send selection" },
+}, { mode = "v", prefix = "<leader>" })
 

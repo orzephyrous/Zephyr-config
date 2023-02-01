@@ -54,8 +54,6 @@ require('packer').startup(function(use)
   use {
     "folke/which-key.nvim",
     config = function()
-      vim.o.timeout = true
-      vim.o.timeoutlen = 300
       require("which-key").setup()
     end
   }
@@ -73,4 +71,20 @@ require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  -- iron.nvim
+  use 'hkupty/iron.nvim'
+  
+  -- surround.nvim
+  use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+      require("nvim-surround").setup()
+    end
+  })
+
+  -- leap.nvim
+  use 'ggandor/leap.nvim'
+
 end)
