@@ -44,10 +44,32 @@ return {
     }
   },
   font = wezterm.font_with_fallback {
-    'FiraCode Nerd Font Mono',
-    'Noto Color Emoji',
+    'Fisa Code',
     'Microsoft YaHei',
     'LXGW WenKai Mono'
+  },
+  font_rules = {
+    {
+      intensity = 'Bold',
+      italic = false,
+      font = wezterm.font_with_fallback {
+        { family = 'Fisa Code', weight = 'Bold' }
+      }
+    },
+    {
+      intensity = 'Bold',
+      italic = true,
+      font = wezterm.font_with_fallback {
+        { family = 'Fisa Code', style = 'Italic' }
+      }
+    },
+    {
+      intensity = 'Normal',
+      italic = true,
+      font = wezterm.font_with_fallback {
+        { family = 'Fisa Code', weight = 'Light', style = 'Italic' }
+      }
+    }
   },
   font_size = 11,
   keys = {
