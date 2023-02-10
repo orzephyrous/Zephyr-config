@@ -8,7 +8,7 @@ end)
 
 return {
   -- Spawn powershell
-  default_prog = { 'pwsh.exe', '-NoLogo' },
+  default_prog = { 'nu.exe' },
   launch_menu = {
     {
       label = 'cmd',
@@ -82,6 +82,11 @@ return {
       key = 'l',
       mods = 'ALT',
       action = wezterm.action.ShowLauncher
+    },
+    {
+      key = 'Enter',
+      mods = 'ALT',
+      action = wezterm.action.DisableDefaultAssignment,
     },
   },
 }
