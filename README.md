@@ -6,6 +6,7 @@ Config diectories are linked to this repository using `New-Item -ItemType Juncti
 
 ## Config directories:
 
+- broot: `%APPDATA%\dystroy\broot`
 - helix: `%APPDATA%\helix`
 - lf: `%LOCALAPPDATA%\lf`
 - micro: `~\.config\micro`
@@ -17,6 +18,11 @@ Config diectories are linked to this repository using `New-Item -ItemType Juncti
 ## Contents
 
 Main content of each folder.
+
+### broot
+
+- Start with git info
+- Integration with 7z, Recycle, helix, nvim, nu
 
 ### lf
 

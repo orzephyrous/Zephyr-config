@@ -1,0 +1,71 @@
+###############################################################
+# This configuration file lets you
+# - define new commands
+# - change the shortcut or triggering keys of built-in verbs
+# - change the colors
+# - set default values for flags
+# - set special behaviors on specific paths
+# - and more...
+#
+# Configuration documentation is available at
+#     https://dystroy.org/broot
+#
+# This file's format is Hjson ( https://hjson.github.io/ ). Some
+# properties are commented out. To enable them, remove the `#`.
+#
+###############################################################
+
+###############################################################
+# Default flags
+# You can set up flags you want broot to start with by
+# default, for example `default_flags="ihp"` if you usually want
+# to see hidden and gitignored files and the permissions (then
+# if you don't want the hidden files you can launch `br -H`)
+# A popular flag is the `g` one which displays git related info.
+#
+default_flags: g
+
+###############################################################
+# Whether to mark the selected line with a triangle
+#
+show_selection_mark: true
+
+###############################################################
+# Max file size for content search
+#
+# Bigger files are ignored when searching their content. You
+# can specify this size either in ISO units (eg 5GB) or in
+# the old binary units (eg 44Kib)
+content_search_max_file_size: 10MB
+
+###############################################################
+# Imports
+#
+# While it's possible to have all configuration in one file,
+# it's more convenient to split it in several ones.
+# Importing also allows to set a condition on the terminal's
+# color, which makes it possible to have a different skin 
+# chosen when your terminal has a light background and when
+# it has a light one.
+imports: [
+
+    # Verbs are better configured in verbs.hjson. But you
+    # can also add another files for your personal verbs
+    verbs.hjson
+
+    # This file contains the skin to use when the terminal
+    # is dark (or when this couldn't be determined)
+    {
+        luma: [
+            dark
+            unknown
+        ]
+        file: zephyr-dark.hjson
+    }
+
+    # This skin is imported when your terminal is light
+    {
+        luma: light
+        file: zephyr-light.hjson
+    }
+]

@@ -1,0 +1,102 @@
+###############################################################
+# This file contains the verb definitions for broot
+#
+# Doc at https://dystroy.org/broot/verbs/
+###############################################################
+
+verbs: [
+
+    # A standard recommended command for editing files
+    {
+        invocation: edit
+        shortcut: e
+        external: "nvim +{line} {file}"
+        leave_broot: false
+    }
+
+    # Edit with helix editor
+    {
+        invocation: helix
+        shortcut: hx
+        external: "hx {file}"
+        leave_broot: false
+    }
+
+    # Creating a new file without leaving broot
+    {
+        name: touch
+        invocation: touch {new_file}
+        execution: "nu -c \"touch {directory}/{new_file}\""
+        leave_broot: false
+    }
+
+    {
+        invocation: git_diff
+        shortcut: gd
+        leave_broot: false
+        external: "git difftool -y {file}"
+    }
+
+    # On ctrl-b, propose the creation of a copy of the selection.
+    # While this might occasionally be useful, this verb is mostly here
+    # as an example to demonstrate rare standard groups like {file-stem}
+    # and {file-dot-extension} and the auto_exec verb property which
+    # allows verbs not executed until you hit enter
+    {
+        invocation: "backup {version}"
+        key: ctrl-b
+        leave_broot: false
+        auto_exec: false
+        external: "cp -r {file} {parent}/{file-stem}-{version}{file-dot-extension}"
+    }
+
+    # This verb lets you launch a terminal on ctrl-T
+    # (on exit you'll be back in broot)
+    {
+        invocation: terminal
+        key: ctrl-t
+        external: "nu"
+        set_working_dir: true
+        leave_broot: false
+    }
+
+    # 7z
+    # add files or directory to archive
+    {
+        invocation: archive {archive_name} {archive_type}
+        shortcut: a
+        apply_to: "file"
+        external: "7z a \"{directory}/{archive_name}.{archive_type}\" {file} -t{archive_type}"
+        leave_broot: false
+    }
+    {
+        invocation: archive {archive_type}
+        shortcut: a
+        apply_to: "directory"
+        external: "7z a \"{parent}/{file-name}.{archive_type}\" {file} -t{archive_type}"
+        leave_broot: false
+    }
+    # extract files from an archive
+    {
+        invocation: extract {output}
+        shortcut: x
+        external: "7z x {file} -o{directory}/{output}"
+        leave_broot: false
+    }
+
+    # File explorer
+    {
+        invocation: open_explorer
+        shortcut: oe
+        external: "explorer {directory}"
+        leave_broot: false
+    }
+
+    # Recycle bin
+    {
+        invocation: trash
+        external: "pwsh -c Remove-ItemSafely {file} -Force -Recurse"
+        leave_broot: false
+    }
+]
+
