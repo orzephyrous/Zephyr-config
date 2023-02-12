@@ -59,6 +59,7 @@
 - [pijul](https://pijul.org/)
 - [PowerShell 7](https://learn.microsoft.com/zh-cn/powershell/)
 - [PowerToys](https://github.com/microsoft/PowerToys)
+- [Preme for Windows](http://www.premeforwindows.com)
 - [qimgv](https://github.com/easymodo/qimgv)
 - [QuickLook](https://pooi.moe/QuickLook/)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
