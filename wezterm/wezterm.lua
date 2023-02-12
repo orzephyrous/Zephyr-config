@@ -45,6 +45,7 @@ return {
   },
   font = wezterm.font_with_fallback {
     'Fisa Code',
+    'VictorMono NFM',
     'Microsoft YaHei',
     'LXGW WenKai Mono'
   },
