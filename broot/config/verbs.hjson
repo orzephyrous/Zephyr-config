@@ -26,7 +26,7 @@ verbs: [
     {
         name: touch
         invocation: touch {new_file}
-        execution: "nu -c \"touch {directory}/{new_file}\""
+        execution: "nu -c \"touch {directory}\\{new_file}\""
         leave_broot: false
     }
 
@@ -47,7 +47,7 @@ verbs: [
         key: ctrl-b
         leave_broot: false
         auto_exec: false
-        external: "cp -r {file} {parent}/{file-stem}-{version}{file-dot-extension}"
+        external: "xcopy /Q /H /Y /I {file} {parent}\\{file-stem}-{version}{file-dot-extension}"
     }
 
     # This verb lets you launch a terminal on ctrl-T
@@ -66,14 +66,14 @@ verbs: [
         invocation: archive {archive_name} {archive_type}
         shortcut: a
         apply_to: "file"
-        external: "7z a \"{directory}/{archive_name}.{archive_type}\" {file} -t{archive_type}"
+        external: "7z a \"{directory}\\{archive_name}\" {file} -t{archive_type}"
         leave_broot: false
     }
     {
         invocation: archive {archive_type}
         shortcut: a
         apply_to: "directory"
-        external: "7z a \"{parent}/{file-name}.{archive_type}\" {file} -t{archive_type}"
+        external: "7z a \"{parent}/{file-name}\" {file} -t{archive_type}"
         leave_broot: false
     }
     # extract files from an archive
