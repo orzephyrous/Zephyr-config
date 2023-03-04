@@ -78,6 +78,7 @@
 - [Snipaste](https://www.snipaste.com)
 - [Sioyek](https://sioyek.info)
 - [TexLive](https://tug.org/texlive/)
+- [Tiled](https://www.mapeditor.org)
 - [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
 - [TranslucentTB](https://github.com/TranslucentTB/TranslucentTB)
 - [ttyd](https://tsl0922.github.io/ttyd/)
