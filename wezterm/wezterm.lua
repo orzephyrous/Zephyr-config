@@ -1,10 +1,4 @@
 local wezterm = require 'wezterm'
-local mux = wezterm.mux
-
-wezterm.on('gui-startup', function(cmd)
-  local tab, pane, window = mux.spawn_window(cmd or {})
-  window:gui_window():maximize()
-end)
 
 return {
   -- Spawn powershell
@@ -28,11 +22,11 @@ return {
     },
     {
       label = 'Git Bash',
-      args = { 'C:\\Program Files\\Git\\bin\\bash.exe' }
+      args = { [[C:\Program Files\Git\bin\bash.exe]] }
     },
     {
       label = 'Git CMD',
-      args = { 'C:\\Program Files\\Git\\git-cmd.exe' }
+      args = { [[C:\Program Files\Git\git-cmd.exe]] }
     },
     {
       label = 'Anaconda Prompt',
@@ -44,8 +38,7 @@ return {
     }
   },
   font = wezterm.font_with_fallback {
-    'Fisa Code',
-    'VictorMono NFM',
+    'FiraCode NFM',
     'Microsoft YaHei',
     'LXGW WenKai Mono'
   },
@@ -54,25 +47,27 @@ return {
       intensity = 'Bold',
       italic = false,
       font = wezterm.font_with_fallback {
-        { family = 'Fisa Code', weight = 'Bold' }
+        { family = 'FiraCode NFM', weight = 'Bold' }
       }
     },
     {
       intensity = 'Bold',
       italic = true,
       font = wezterm.font_with_fallback {
-        { family = 'Fisa Code', style = 'Italic' }
+        { family = 'Operator Mono SSm Lig Bold', style = 'Italic' }
       }
     },
     {
       intensity = 'Normal',
       italic = true,
       font = wezterm.font_with_fallback {
-        { family = 'Fisa Code', weight = 'Light', style = 'Italic' }
+        { family = 'Operator Mono SSm Lig Book', style = 'Italic' }
       }
     }
   },
-  font_size = 11,
+  font_size = 12,
+  initial_cols = 120,
+  initial_rows = 30,
   keys = {
     {
       key = 'w',

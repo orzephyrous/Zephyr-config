@@ -65,10 +65,11 @@ See `Rime\Rime-config.md`
 
 ### wezterm
 
-- Start up in maximized window.
+- Start up with 120 columns and 30 rows (Windows Terminal Default).
 - Set default program to powershell (5.1).
 - Add cmd, powershell(5.1), powershell (7.3), git bash, git cmd, anaconda prompt to launch menu.
-- Set default font to FiraCode Nerd Font Mono (English), Microsoft YaHei (Most Chinese characters), LXGW Wenkai Mono (Some Chinese characters).
-- Set font size to 11.
+- Set default font to Operator Mono SSm Lig, Microsoft YaHei (Most Chinese characters), LXGW Wenkai Mono (Some Chinese characters).
+- Set _Italic_ fonts.
+- Set font size to 12.
 - Bind `ALT + w` to close pane, `ALT + l` to show launch menu.
 
