@@ -1,8 +1,7 @@
 local wezterm = require 'wezterm'
 
 return {
-  -- Spawn powershell
-  default_prog = { 'pwsh.exe', '-NoLogo' },
+  default_prog = { 'pwsh.exe' },
   launch_menu = {
     {
       label = 'cmd',
@@ -35,6 +34,13 @@ return {
     {
       label = 'Julia',
       args = { 'julia.exe' }
+    },
+    {
+      label = 'Miniforge Prompt (Julia)',
+      args = {
+        'cmd.exe', "/K",
+        [[%USERPROFILE%\.julia\conda\3\Scripts\activate.bat C:\Users\llfda\.julia\conda\3]]
+      }
     }
   },
   font = wezterm.font_with_fallback {
