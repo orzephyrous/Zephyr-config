@@ -82,7 +82,7 @@ map ox open-in-dragon-exit
 # Open with nvim (plain text files only)
 cmd open-with-nvim $nvim %f%
 map on open-with-nvim
-cmd open-with-nvim-qt &nvim-qt %f%
+cmd open-with-nvui &nvui %f%
 map oN open-with-nvim-qt
 
 # Open with micro (plain text files only)

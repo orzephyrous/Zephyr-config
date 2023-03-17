@@ -6,6 +6,7 @@
 |-lua
 | |-config
 | | |-init.lua
+| | |-barbar.lua
 | | |-comment.lua
 | | |-gruvbox.lua
 | | |-iron.lua
@@ -15,6 +16,7 @@
 | | └-nvim-treesitter.lua
 | |-basic.lua
 | |-keymaps.lua
+| |-nvui.lua
 | └-plugins.lua
 |-ginit.vim
 └-init.lua
