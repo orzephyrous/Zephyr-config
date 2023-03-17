@@ -53,6 +53,7 @@
 - [min (web browser)](https://minbrowser.org)
 - [mpv](https://mpv.io)
 - [mpv.net](https://github.com/mpvnet-player/mpv.net)
+- [musikcube](https://musikcube.com)
 - [NeoVim](https://neovim.io)
 - [Node.js](https://nodejs.org/en/)
 - [Notepad Next](https://github.com/dail8859/NotepadNext)
@@ -92,6 +93,7 @@
 - [you-get](https://github.com/soimort/you-get)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [Zotero](https://www.zotero.org)
+- [ZY Player](http://zyplayer.fun)
 - [Rime-Weasel](https://github.com/rime/weasel)
 
 ## Free
