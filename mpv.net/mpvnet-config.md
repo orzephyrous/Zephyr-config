@@ -131,3 +131,11 @@ disabled (loading is slow and often fails)
 **Original:** [osc-show-hide-hotkey](https://github.com/linguisticmind/mpv-scripts/tree/master/osc-show-hide-hotkey)
 
 disabled (just use `Del` key)
+
+## shaders
+
+**Original:** [Anime4K](https://github.com/bloc97/Anime4K)
+
+**Modifications:** None
+
+Anime4K glsl shaders
