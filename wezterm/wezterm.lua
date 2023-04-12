@@ -28,8 +28,8 @@ return {
       args = { [[C:\Program Files\Git\git-cmd.exe]] }
     },
     {
-      label = 'Anaconda Prompt',
-      args = { 'cmd.exe', '/K', [[%USERPROFILE%\anaconda3\Scripts\activate.bat %USERPROFILE%\anaconda3]] }
+      label = 'Miniforge Prompt (mambaforge-pypy3)',
+      args = { 'cmd.exe', '/K', [[%USERPROFILE%\mambaforge-pypy3\Scripts\activate.bat %USERPROFILE%\mambaforge-pypy3]] }
     },
     {
       label = 'Julia',
@@ -39,7 +39,7 @@ return {
       label = 'Miniforge Prompt (Julia)',
       args = {
         'cmd.exe', "/K",
-        [[%USERPROFILE%\.julia\conda\3\Scripts\activate.bat C:\Users\llfda\.julia\conda\3]]
+        [[%USERPROFILE%\.julia\conda\3\Scripts\activate.bat %USERPROFILE%\.julia\conda\3]]
       }
     }
   },
