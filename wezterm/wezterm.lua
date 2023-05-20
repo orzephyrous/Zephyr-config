@@ -28,8 +28,8 @@ return {
       args = { [[C:\Program Files\Git\git-cmd.exe]] }
     },
     {
-      label = 'Miniforge Prompt (mambaforge-pypy3)',
-      args = { 'cmd.exe', '/K', [[%USERPROFILE%\mambaforge-pypy3\Scripts\activate.bat %USERPROFILE%\mambaforge-pypy3]] }
+      label = 'Miniforge Prompt (mambaforge)',
+      args = { 'cmd.exe', '/K', [[%USERPROFILE%\mambaforge\Scripts\activate.bat %USERPROFILE%\mambaforge]] }
     },
     {
       label = 'Julia',
