@@ -51,6 +51,10 @@ Main content of each folder.
 - Set color scheme to gruvbox.
 - Disable command history records.
 
+### mpv
+
+See `mpv\README.md`
+
 ### mpv.net
 
 See `mpv.net\mpvnet-config.md`
