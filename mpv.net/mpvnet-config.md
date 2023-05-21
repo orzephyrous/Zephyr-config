@@ -96,7 +96,7 @@ Better slice long filenames (Chinese characters count as given chars instead of 
 
 **Usage:** Use with Play-With-MPV, or in console: set script-opts "cid={cid}", or in cmd: --script-opts="cid={cid}"
 
-### thumbfasf.lua
+### thumbfast.lua
 
 **Original:** [thumbfast](https://github.com/po5/thumbfast)
 
