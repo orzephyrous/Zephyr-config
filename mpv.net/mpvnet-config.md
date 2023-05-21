@@ -36,6 +36,8 @@ load sub or audio: Alt+s/a -> Alt+S/A
 
 stop: Ctrl+s -> !
 
+Space: speed up when pressed(inputevent.lua)
+
 ## scripts
 
 ### seek-to.lua
@@ -111,6 +113,12 @@ Better slice long filenames (Chinese characters count as given chars instead of 
 **Modifications:** None
 
 replaces original osc to integrate thumbfasf.lua
+
+### inputevent.lua
+
+**Original:** [inputevent](https://github.com/natural-harmonia-gropius/input-event)
+
+**Modifications:** None
 
 ### osd-bar.lua
 
