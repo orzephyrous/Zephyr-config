@@ -34,13 +34,6 @@ return {
     {
       label = 'Julia',
       args = { 'julia.exe' }
-    },
-    {
-      label = 'Miniforge Prompt (Julia)',
-      args = {
-        'cmd.exe', "/K",
-        [[%USERPROFILE%\.julia\conda\3\Scripts\activate.bat %USERPROFILE%\.julia\conda\3]]
-      }
     }
   },
   font = wezterm.font_with_fallback {
