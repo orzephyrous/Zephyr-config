@@ -10,6 +10,7 @@ Config diectories are linked to this repository using `New-Item -ItemType Juncti
 - helix: `%APPDATA%\helix`
 - lf: `%LOCALAPPDATA%\lf`
 - micro: `~\.config\micro`
+- mpv: `%APPDATA\mpv` (scoop: `~\scoop\persist\mpv\portable_config`)
 - mpv.net: `%APPDATA%\mpv.net` (scoop: `~\scoop\persist\mpv.net-beta\portable_config`)
 - NeoVim: `%LOCALAPPDATA%\nvim`
 - Rime: `%APPDATA%\Rime`
