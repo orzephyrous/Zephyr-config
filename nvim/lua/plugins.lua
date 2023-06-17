@@ -73,7 +73,7 @@ require('packer').startup(function(use)
   }
 
   -- iron.nvim
-  use 'hkupty/iron.nvim'
+  use 'Vigemus/iron.nvim'
   
   -- surround.nvim
   use({
