@@ -33,7 +33,7 @@ return {
     },
     {
       label = 'Julia',
-      args = { 'julia.exe' }
+      args = { 'cmd.exe', '/C', 'julia.exe' }
     }
   },
   font = wezterm.font_with_fallback {
