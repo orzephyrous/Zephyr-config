@@ -30,7 +30,7 @@ require('packer').startup(function(use)
   use 'nathom/filetype.nvim'
 
   -- barbar.nvim (tab bar)
-  use {'romgrk/barbar.nvim', wants = 'nvim-web-devicons'}
+  use {'romgrk/barbar.nvim'}
 
   -- markdown-preview.nvim
   use {
