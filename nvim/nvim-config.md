@@ -3,29 +3,36 @@
 ## config layout
 
 ```
-|-lua
-| |-config
-| | |-init.lua
-| | |-barbar.lua
-| | |-comment.lua
-| | |-gruvbox.lua
-| | |-iron.lua
-| | |-lualine.lua
-| | |-nvim-surround.lua
-| | |-nvim-tree.lua
-| | └-nvim-treesitter.lua
-| |-basic.lua
-| |-keymaps.lua
-| |-nvui.lua
-| └-plugins.lua
+|-nvim-config.md
 |-ginit.vim
-└-init.lua
+|-init.lua
+└-lua
+  |-core.lua
+  |-keys
+  | |-comment.lua
+  | |-init.lua
+  | |-iron.lua
+  | |-leap.lua
+  | |-nvim-tree.lua
+  | └-telescope.lua
+  └-plugins
+    |-init.lua
+    └-configs
+      |-bufferline.lua
+      |-comment.lua
+      |-gruvbox.lua
+      |-iron.lua
+      |-leap.lua
+      |-lualine.lua
+      |-nvim-surround.lua
+      |-nvim-tree.lua
+      |-nvim-treesitter.lua
+      └-telescope.lua
 ```
 
 ## plugins
 
-- barbar.nvim
-- clipboard-image.nvim
+- bufferline.nvim
 - comment.nvim
 - filetype.nvim
 - impatient.nvim
@@ -35,7 +42,7 @@
 - nvim-tree.lua
 - nvim-treesitter
 - nvim-web-devicons
-- packer.nvim
+- lazy.nvim
 - telescope.nvim
 - which-key.nvim
 - iron.nvim
@@ -44,19 +51,18 @@
 
 ## content
 
-- Plugin manager: packer.nvim
+- Plugin manager: lazy.nvim
 - Startup improvement: impatient.nvim, filetype.nvim
 - Color theme: gruvbox.nvim
 - Nerd icons: nvim-web-devicons
 - Status bar: lualine.nvim
-- Tab bar: barbar.nvim
+- Tab bar: bufferline.nvim
 - File tree: nvim-tree.lua
 - File search: telescope.nvim
 - Highlighting: nvim-treesitter
 - Key bindings: which-key.nvim
-- Markdown support: markdown-preview.nvim, clipboard-image.nvim
 - Quick motion: leap.nvim
-- Comment: comment.nvim
+- Comment: Comment.nvim
 - Surround: nvim-surround
 - REPL support: iron.nvim
 - Basic settings: relative line number, listchars, cursorline

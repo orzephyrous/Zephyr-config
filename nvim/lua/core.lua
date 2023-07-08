@@ -1,5 +1,3 @@
-require('impatient')
-
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 5
@@ -14,3 +12,5 @@ vim.opt.smartcase = true
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 vim.opt.timeoutlen = 500
+
+vim.g.mapleader = " "
