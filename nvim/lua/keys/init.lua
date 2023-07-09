@@ -22,15 +22,13 @@ wk.register({
     o = { "<cmd>BufferLineCloseOthers<cr>", "Buffer Close Others"},
     f = { "<cmd>BufferLinePick<cr>", "Buffer Pick"},
   },
-  ["/"] = { name = "Comment linewise" },
-  B = { name = "Comment blockwise" },
-  t = {  name = "tree", },
+  t = { name = "tree", },
   p = { '"+p', "Paste System Clipboard" },
   P = { '"+P', "Paste System Clipboard Before" },
   f = { name = "telescope" },
   r = { name = "repl" },
   s = { name = "send to repl" },
-  q = { "<cmd>q<cr>", "Quit" }
+  q = { "<cmd>qa<cr>", "Quit" }
 }, { prefix = "<leader>" })
 
 wk.register({

@@ -10,8 +10,6 @@ return {
 
   { "folke/which-key.nvim", lazy = false },
 
-  { "lewis6991/impatient.nvim", lazy = false },
-
   { "nathom/filetype.nvim", lazy = false },
 
   { "nvim-tree/nvim-web-devicons", lazy = false },
@@ -75,10 +73,7 @@ return {
     "nvim-telescope/telescope.nvim",
     lazy = true,
     keys = require("keys.telescope"),
-    dependencies = "nvim-lua/plenary.nvim",
-    config = function()
-      require("plugins.configs.telescope")
-    end
+    dependencies = "nvim-lua/plenary.nvim"
   },
 
   {
@@ -91,11 +86,12 @@ return {
   },
 
   {
-    "Vigemus/iron.nvim",
+    "iamcco/markdown-preview.nvim",
     lazy = true,
-    keys = require("keys.iron"),
-    config = function()
-      require("plugins.configs.iron")
+    keys = require("keys.markdown-preview"),
+    ft = "markdown",
+    build = function()
+      vim.fn["mkdp#util#install"]()
     end
   },
 

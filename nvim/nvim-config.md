@@ -9,10 +9,9 @@
 └-lua
   |-core.lua
   |-keys
-  | |-comment.lua
   | |-init.lua
-  | |-iron.lua
   | |-leap.lua
+  | |-markdown-preview.lua
   | |-nvim-tree.lua
   | └-telescope.lua
   └-plugins
@@ -21,13 +20,11 @@
       |-bufferline.lua
       |-comment.lua
       |-gruvbox.lua
-      |-iron.lua
       |-leap.lua
       |-lualine.lua
       |-nvim-surround.lua
       |-nvim-tree.lua
-      |-nvim-treesitter.lua
-      └-telescope.lua
+      └-nvim-treesitter.lua
 ```
 
 ## plugins
@@ -35,7 +32,6 @@
 - bufferline.nvim
 - comment.nvim
 - filetype.nvim
-- impatient.nvim
 - gruvbox.nvim
 - lualine.nvim
 - markdown-preview.nvim
@@ -45,14 +41,13 @@
 - lazy.nvim
 - telescope.nvim
 - which-key.nvim
-- iron.nvim
 - nvim-surround
 - leap.nvim
 
 ## content
 
 - Plugin manager: lazy.nvim
-- Startup improvement: impatient.nvim, filetype.nvim
+- Startup improvement: filetype.nvim
 - Color theme: gruvbox.nvim
 - Nerd icons: nvim-web-devicons
 - Status bar: lualine.nvim
@@ -64,5 +59,5 @@
 - Quick motion: leap.nvim
 - Comment: Comment.nvim
 - Surround: nvim-surround
-- REPL support: iron.nvim
+- Markdown support: markdown-preview.nvim
 - Basic settings: relative line number, listchars, cursorline
