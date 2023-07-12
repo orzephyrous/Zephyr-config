@@ -33,6 +33,14 @@ return {
   },
 
   {
+    "ojroques/nvim-bufdel",
+    lazy = false,
+    config = function()
+      require("plugins.configs.nvim-bufdel")
+    end
+  },
+
+  {
     "kylechui/nvim-surround",
     lazy = false,
     config = function()

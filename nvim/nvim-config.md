@@ -22,6 +22,7 @@
       |-gruvbox.lua
       |-leap.lua
       |-lualine.lua
+      |-nvim-bufdel.lua
       |-nvim-surround.lua
       |-nvim-tree.lua
       └-nvim-treesitter.lua

@@ -18,7 +18,7 @@ wk.register({
     h = { "<cmd>BufferLineMovePrev<cr>", "Buffer Move Left" },
     l = { "<cmd>BufferLineMoveNext<cr>", "Buffer Move Right" },
     Q = { "<cmd>BufferLinePickClose<cr>", "Buffer Close Pick" },
-    q = { "<cmd>bdelete<cr>", "Buffer Close" },
+    q = { "<cmd>BufDel<cr>", "Buffer Close" },
     o = { "<cmd>BufferLineCloseOthers<cr>", "Buffer Close Others"},
     f = { "<cmd>BufferLinePick<cr>", "Buffer Pick"},
   },
