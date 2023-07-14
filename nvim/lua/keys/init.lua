@@ -1,3 +1,5 @@
+vim.keymap.set("n", "<esc>", "<cmd>noh<cr>", { noremap = true, silent = true })
+
 local wk = require("which-key")
 local presets = require("which-key.plugins.presets")
 
