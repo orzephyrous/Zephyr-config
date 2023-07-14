@@ -13,6 +13,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("plugins")
+opt = { performance = { rtp = { reset = false, }}}
+
+require("lazy").setup("plugins", opt)
 
 require("keys")
