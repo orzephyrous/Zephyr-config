@@ -106,6 +106,12 @@ replaces original osc to integrate thumbfasf.lua
 
 **Modifications:** None
 
+### file-browser.lua
+
+**Original:** [file-browser](https://github.com/CogentRedTester/mpv-file-browser)
+
+**Modifications:** Set text color to white, remove dash lines in header.
+
 ## shaders
 
 **Original:** [Anime4K](https://github.com/bloc97/Anime4K)
