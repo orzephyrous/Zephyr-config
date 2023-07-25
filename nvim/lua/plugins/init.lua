@@ -8,8 +8,6 @@ return {
     end
   },
 
-  { "folke/which-key.nvim", lazy = false },
-
   { "nathom/filetype.nvim", lazy = false },
 
   { "nvim-tree/nvim-web-devicons", lazy = false },
@@ -48,9 +46,17 @@ return {
     end
   },
 
+  { 
+    "folke/which-key.nvim", 
+    keys = { "<leader>", '"', "'", "`", "d", "c", "y", "v", "g" },
+    config = function()
+      require("keys")
+    end
+  },
+
   {
     "numToStr/Comment.nvim",
-    lazy = false,
+    keys = require("keys.comment"),
     config = function()
       require("plugins.configs.comment")
     end
@@ -59,6 +65,7 @@ return {
   {
     "nvim-tree/nvim-tree.lua",
     lazy = true,
+    cmd = { "NvimTreeToggle", "NvimTreeFocus" },
     keys = require("keys.nvim-tree"),
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
@@ -80,6 +87,7 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     lazy = true,
+    cmd = "Telescope",
     keys = require("keys.telescope"),
     dependencies = "nvim-lua/plenary.nvim"
   },
