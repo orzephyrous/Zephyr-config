@@ -28,14 +28,8 @@ wk.register({
   p = { '"+p', "Paste System Clipboard" },
   P = { '"+P', "Paste System Clipboard Before" },
   f = { name = "telescope" },
-  r = { name = "repl" },
-  s = { name = "send to repl" },
   q = { "<cmd>qa<cr>", "Quit" }
 }, { prefix = "<leader>" })
-
-wk.register({
-  s = "Send selection",
-}, { mode = "v", prefix = "<leader>" })
 
 wk.register({
   n = { "<cmd>BufferLineCycleNext<cr>", "Buffer Next" },
