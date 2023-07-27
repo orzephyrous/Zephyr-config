@@ -50,7 +50,7 @@ return {
     "folke/which-key.nvim", 
     keys = { "<leader>", '"', "'", "`", "d", "c", "y", "v", "g", "z", "<C-w>" },
     config = function()
-      require("keys")
+      require("keys.which-key")
     end
   },
 
