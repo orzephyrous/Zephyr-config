@@ -22,11 +22,12 @@ wk.register({
     o = { "<cmd>BufferLineCloseOthers<cr>", "Buffer Close Others"},
     f = { "<cmd>BufferLinePick<cr>", "Buffer Pick"},
   },
-  t = { name = "tree", },
+  e = { name = "explorer" },
   p = { '"+p', "Paste System Clipboard" },
   P = { '"+P', "Paste System Clipboard Before" },
   f = { name = "telescope" },
-  q = { "<cmd>qa<cr>", "Quit" }
+  q = { "<cmd>qa<cr>", "Quit" },
+  t = { name = "terminal" }
 }, { prefix = "<leader>" })
 
 wk.register({

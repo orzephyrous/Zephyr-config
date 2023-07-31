@@ -1,5 +1,5 @@
 return {
-  { "<leader>tt", "<cmd>NvimTreeToggle<cr>", desc = "Toggle Nvim-Tree"},
-  { "<leader>to", "<cmd>NvimTreeOpen<cr>", desc = "Open Nvim-Tree"},
-  { "<leader>tq", "<cmd>NvimTreeClose<cr>", desc = "Close Nvim-Tree"}
+  { "<leader>et", "<cmd>NvimTreeToggle<cr>", desc = "Toggle Nvim-Tree"},
+  { "<leader>eo", "<cmd>NvimTreeOpen<cr>", desc = "Open Nvim-Tree"},
+  { "<leader>eq", "<cmd>NvimTreeClose<cr>", desc = "Close Nvim-Tree"}
 }

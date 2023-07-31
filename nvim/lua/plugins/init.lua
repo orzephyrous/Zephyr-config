@@ -76,7 +76,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     build = function()
-      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
       ts_update()
     end,
     config = function()
@@ -112,23 +112,34 @@ return {
   },
 
   {
-    'cameron-wags/rainbow_csv.nvim',
+    "cameron-wags/rainbow_csv.nvim",
     config = true,
     ft = {
-      'csv',
-      'tsv',
-      'csv_semicolon',
-      'csv_whitespace',
-      'csv_pipe',
-      'rfc_csv',
-      'rfc_semicolon'
+      "csv",
+      "tsv",
+      "csv_semicolon",
+      "csv_whitespace",
+      "csv_pipe",
+      "rfc_csv",
+      "rfc_semicolon"
     },
     cmd = {
-      'RainbowDelim',
-      'RainbowDelimSimple',
-      'RainbowDelimQuoted',
-      'RainbowMultiDelim'
+      "RainbowDelim",
+      "RainbowDelimSimple",
+      "RainbowDelimQuoted",
+      "RainbowMultiDelim"
     }
+  },
+
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    lazy = true,
+    cmd = { "ToggleTerm", "TermExec" },
+    keys = require("keys.toggleterm"),
+    config = function()
+      require("plugins.configs.toggleterm")
+    end
   }
 
 }
