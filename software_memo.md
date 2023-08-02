@@ -108,6 +108,7 @@
 - [VMD](https://www.ks.uiuc.edu/Research/vmd/) 
 - [Watt Toolkit (Steam++)](https://steampp.net)
 - [WezTerm](https://wezfurlong.org/wezterm/)
+- [WingetUI](https://github.com/marticliment/WingetUI)
 - [WinMerge](https://winmerge.org)
 - [Wox](http://wox.one/)
 - [you-get](https://github.com/soimort/you-get)
