@@ -45,6 +45,14 @@ return {
     end
   },
 
+  {
+    "lewis6991/gitsigns.nvim",
+    lazy = false,
+    config = function()
+      require("plugins.configs.gitsigns")
+    end
+  },
+
   { 
     "folke/which-key.nvim", 
     keys = { "<leader>", '"', "'", "`", "d", "c", "y", "v", "g", "z", "<C-w>" },
