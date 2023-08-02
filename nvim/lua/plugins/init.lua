@@ -1,10 +1,9 @@
 return {
   {
-    "ellisonleao/gruvbox.nvim",
+    "rebelot/kanagawa.nvim",
     lazy = false,
-    priority = 1000,
     config = function()
-      require("plugins.configs.gruvbox")
+      require("plugins.configs.kanagawa")
     end
   },
 
