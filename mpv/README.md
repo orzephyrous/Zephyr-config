@@ -12,23 +12,13 @@ set OSD font to LXGW Wenkai Mono, font size 56 border 3 (for better Chinese supp
 
 set volume max to 200 (default was 130)
 
+set ytdl option to read cookies from browser
+
+set sub-auto to fuzzy
+
 ### input.conf
 
-add commands and descriptions for script hotkeys, add comments for command_palette
-
-quit: ESC -> q (mpv setting)
-
-Mouse Wheel, volume change by 5 (default by 2)
-
-show commands: C -> _
-
-show config editor: c -> Ctrl+c
-
-load sub or audio: Alt+s/a -> Alt+S/A
-
-stop: Ctrl+s -> !
-
-Space: speed up when pressed(inputevent.lua)
+add commands and descriptions for script hotkeys, see comments in `input.conf`
 
 ## scripts
 
@@ -70,7 +60,7 @@ Better slice long filenames (Chinese characters count as given chars instead of 
 
 ### pause-indicator.lua
 
-**Original:** [pause-indicator](https://gist.github.com/torque/9dbc69543118347d2e5f43239a7e609a)
+**Original:** [pause-indicator](https://github.com/oltodosel/mpv-scripts/blob/master/pause-indicator.lua)
 
 **Modifications:** smaller indicator on lower left
 
