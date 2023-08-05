@@ -30,7 +30,7 @@ wk.register({
   w = { "<cmd>w<cr>", "Write" },
   q = { "<cmd>qa<cr>", "Quit" },
   t = { name = "terminal" }
-}, { prefix = "<leader>" })
+}, { prefix = "<leader>", mode = { "n", "v" } })
 
 wk.register({
   n = { "<cmd>BufferLineCycleNext<cr>", "Buffer Next" },
