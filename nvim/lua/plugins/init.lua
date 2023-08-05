@@ -53,6 +53,14 @@ return {
     end
   },
 
+  {
+    "NvChad/nvim-colorizer.lua",
+    lazy = false,
+    config = function()
+      require("plugins.configs.nvim-colorizer")
+    end
+  },
+
   { 
     "folke/which-key.nvim", 
     keys = { "<leader>", '"', "'", "`", "d", "c", "y", "v", "g", "z", "<C-w>" },
