@@ -119,8 +119,8 @@ return {
   {
     "iamcco/markdown-preview.nvim",
     lazy = true,
+    cmd = { "MarkdownPreview", "MarkdownPreviewToggle" },
     keys = require("keys.markdown-preview"),
-    ft = "markdown",
     build = function()
       vim.fn["mkdp#util#install"]()
     end

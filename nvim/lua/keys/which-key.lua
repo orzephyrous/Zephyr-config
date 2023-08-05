@@ -27,6 +27,7 @@ wk.register({
   P = { '"+P', "Paste System Clipboard Before" },
   y = { '"+y', "Yank to System Clipboard"},
   f = { name = "telescope" },
+  w = { "<cmd>w<cr>", "Write" },
   q = { "<cmd>qa<cr>", "Quit" },
   t = { name = "terminal" }
 }, { prefix = "<leader>" })
