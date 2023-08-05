@@ -2,6 +2,7 @@ local wezterm = require 'wezterm'
 
 return {
   default_prog = { 'pwsh.exe' },
+  color_scheme = "Catppuccin Mocha",
   launch_menu = {
     {
       label = 'cmd',
