@@ -1,2 +1,2 @@
-vim.keymap.set("n", "<esc>", "<cmd>noh<cr>", { noremap = true, silent = true })
+vim.keymap.set("n", "<esc>", "<esc><cmd>noh<cr>", { noremap = true, silent = true })
 

@@ -9,20 +9,20 @@ return {
 
   { "nathom/filetype.nvim", lazy = false },
 
-  { "nvim-tree/nvim-web-devicons", lazy = false },
+  { "nvim-tree/nvim-web-devicons" },
 
   {
     "nvim-lualine/lualine.nvim",
-    lazy = false,
+    event = "VeryLazy",
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
       require("plugins.configs.lualine")
     end
   },
 
-  { 
+  {
     "akinsho/bufferline.nvim",
-    lazy = false,
+    event = "VeryLazy",
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
       require("plugins.configs.bufferline")
@@ -47,7 +47,7 @@ return {
 
   {
     "lewis6991/gitsigns.nvim",
-    lazy = false,
+    event = "BufReadPre",
     config = function()
       require("plugins.configs.gitsigns")
     end
@@ -61,9 +61,17 @@ return {
     end
   },
 
-  { 
-    "folke/which-key.nvim", 
-    keys = { "<leader>", '"', "'", "`", "d", "c", "y", "v", "g", "z", "<C-w>" },
+  {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    opts = {},
+    keys = require("keys.flash"),
+  },
+
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    -- keys = { "<leader>", '"', "'", "`", "d", "c", "y", "v", "g", "z", "<C-w>" },
     config = function()
       require("keys.which-key")
     end
@@ -71,6 +79,7 @@ return {
 
   {
     "numToStr/Comment.nvim",
+    event = "VeryLazy",
     keys = require("keys.comment"),
     config = function()
       require("plugins.configs.comment")
@@ -90,6 +99,7 @@ return {
 
   {
     "nvim-treesitter/nvim-treesitter",
+    event = "BufReadPost",
     build = function()
       local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
       ts_update()
@@ -105,15 +115,6 @@ return {
     cmd = "Telescope",
     keys = require("keys.telescope"),
     dependencies = "nvim-lua/plenary.nvim"
-  },
-
-  {
-    "ggandor/leap.nvim",
-    lazy = true,
-    keys = require("keys.leap"),
-    config = function()
-      require("plugins.configs.leap")
-    end
   },
 
   {
