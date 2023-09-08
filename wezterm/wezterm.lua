@@ -38,7 +38,8 @@ return {
     }
   },
   font = wezterm.font_with_fallback {
-    'FiraCode NFM',
+    'Fira Code',
+    { family = 'Symbols Nerd Font Mono', scale = 0.75 },
     'Microsoft YaHei',
     'LXGW WenKai Mono'
   },
@@ -47,7 +48,7 @@ return {
       intensity = 'Bold',
       italic = false,
       font = wezterm.font_with_fallback {
-        { family = 'FiraCode NFM', weight = 'Bold' }
+        { family = 'Fira Code', weight = 'Bold' }
       }
     },
     {
