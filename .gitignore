@@ -5,6 +5,7 @@ lf/files
 lf/tags
 lf/marks
 micro/buffers/
+mpv/cache/
 mpv.net/scripts/bilibiliAssert/*.ass
 mpv.net/*.xml
 nvim/lazy-lock.json
